@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div>HEROPY</div>
+  <p>강한솔</p>
+  <div>GOOD</div>
+</body>
+<body>
+  <div>
+  <h3>선언방식</h3>
+  <h5>1)내장방식</h5>
+  <p>style태그를 이용해 css를 작성하는 방식<br>위의 방식을 사용하면 별도의 css파일을 만들지 않고도 HTML에서 바로 스타일 적용 가능</p>
+  <style>
+    div{
+      color: gray;
+      margin: 20px;
+    }
+  </style>
+</div>
+<div>
+  <h5>2)링크방식</h5>
+  <p>CSS파일을 HTML의 Link태크로 연결하는 방법<br>연결된 파일을 한번에 가져오므로 파일을 불러오는 속도가 비교적 빠름</p>
+</div>
+<div>
+  <h5>3)인라인방식</h5>
+  <p>HTML의 전역 속성으로 스타일을 직접 추가 <br> 
+  <div style="color: red; margin: 20px;">강한솔</div></p>
+</div>
+<div>
+  <h5>4)Imput방식</h5>
+  <p>CSS의 Imput규칙으로 CSS내에서 다른 CSS파일을 가져와 연결함(먼말인지 모르겠음)</p>
+</div>
+<div>
+  <h3 class="선택자">선택자</h3>
+  <h5>1)기본선택자</h5>
+  <p>전체선택자<br>*기호로 표시하며, HTML에 있는 모든 요소의 선택이 가능함
+  <br>부분 단독으로는 잘 사용하지 않고 복합 선택자 등으로 조합해 사용함</p>
+    <p class="선택자">태크선택자<br>태그의 이름으로 요소를 선택함 <br>기본선택자의 *기호가 들어가는 자리에 선택할 HTML 태그 이름을 선택</p>
+  <p><ul><li>사과</li>
+    <li>딸기</li>
+  <li class="orange">오렌지</li>
+</ul>
+</p>
+</div>
+<div>당근</div>
+<p>토마토</p>
+<span class="orange">오렌지</span>
+<div>
+  <h3>ID선택자</h3>
+  <p>HTML ID속성의 값으로 요소를 선택. <br>ID선택자에는 #기호가 사용된다<br>예를들어 css에서 #orange 선택자는 HTML 파일에서 id="orange"라는 속성과 값을 가진 요소를 선택함</p>
+  <p id="강"> 강한솔</p>
+  <span id="강">이상목</span>
+  <li>바보</li>
+  <li id="강">멍청이</li>
+</div>
+<div>
+  <h3 class="제목">*:hover</h3>
+  <p>마우스 커서가 올라간 상태를 호버라고 하며,<br> 해당선택자는 요소에 마우스 커서가 올라간 상태에서만 요소를 선택함</p>
+  <p>하단과 같이 마우스 커서를 가져다 대면 빨간색으로 바뀜</p>
+  <a href="https://www.nvaer.com">NAVER</a>
+</div>
+<div>
+  <h3 class="제목">*:active</h3>
+  <p>요소를 클릭하고 있는 동안에만 글자 색상을 빨간색으로 출력함<br>사용자가 마우스에서 손을 때면 해당요소가 다시 원래색상으로 돌아옴</p>
+  <a href="https://www.naver.com">네이버</a>
+</div>
+<div>
+  <h3 class="제목">*:focus</h3>
+  <p>대화형 요소가 활성화되면 요소를 선택</p>
+  <input type="text" />
+  <p>위와같이 텍스트박스를 활성화 하면 배경색이 핑크색으로 출력됨</p>
+</div>
+<div>
+  <h3 class="제목">*:first-child와 :last-child</h3>
+  <p>first는 철번째 자식요소를 선택하고 last는 마지막 자식요소를 선택</p>
+  </div>
+  <div>
+    <div class="과일">
+      <span>딸기</span>
+      <span>수박</span>
+      <div>오렌지</div>
+      <p>망고</p>
+      <h5>사과</h5>
+  </div>
+  <div>
+    <h3 class="제목">*:nth-child(n)</h3>
+    <p>n번쨰 자식요소를 선택 <br> 소괄호 사이에 몇번쨰 요소를 선택할지 숫자를 통해 지정할수 있음</p>
+  </div>
+  <div>
+    <div class="과일이">
+      <span>딸기</span>
+      <span>수박</span>
+      <div>오렌지</div>
+      <p>망고</p>
+      <h5>사과</h5>
+  </div>
+  <div>
+    <h3 class="제목">*:not(s)</h3>
+    <p>부정선택자로 소괄호 사이에 부정할 선택자(s)를 표시함</p>
+  </div>
+  <div>
+    <div class="과일삼">
+      <span>딸기</span>
+      <span>수박</span>
+      <div>오렌지</div>
+      <p>망고</p>
+      <h5>사과</h5>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.orange {
+  color: red;
+}
+.선택자 {
+  color: aqua;
+}
+#강 {
+  color: plum;
+  text-decoration: underline;
+}
+a:hover {
+  color: red;
+}
+.제목 {
+  font-size: 30px;
+  color: black;
+}
+a:active {
+  color: green;
+}
+input:focus {
+  background-color: pink
+}
+.과일 span:first-child{
+  color: red;
+}
+.과일 h5:last-child{
+  color: blue;
+}
+.과일이 *:nth-child(3) {
+  color: red;
+}
+.과일삼 *:not(span) {
+  color: red;
+}
